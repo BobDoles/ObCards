@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Deck>
+ <string>Abandon normal instruments</string>
+    <string>Accept advice</string>
+    <string>Accretion</string>
+    <string>A line has two sides</string>
+    <string>Allow an easement (an easement is the abandonment of a stricture)</string>
+    <string>Are there sections? Consider transitions</string>
+    <string>Ask people to work against their better judgement</string>
+    <string>Ask your body</string>
+    <string>Assemble some of the instruments in a group and treat the group</string>
+    <string>Balance the consistency principle with the inconsistency principle</string>
+    <string>Be dirty</string>
+    <string>Breathe more deeply</string>
+    <string>Bridges -build -burn</string>
+    <string>Cascades</string>
+    <string>Change instrument roles</string>
+    <string>Change nothing and continue with immaculate consistency</string>
+    <string>Children&apos;s voices -speaking -singing</string>
+    <string>Cluster analysis</string>
+    <string>Consider different fading systems</string>
+    <string>Consult other sources -promising -unpromising</string>
+    <string>Convert a melodic element into a rhythmic element</string>
+    <string>Courage!</string>
+    <string>Cut a vital connection</string>
+    <string>Decorate, decorate</string>
+    <string>Define an area as &apos;safe&apos; and use it as an anchor</string>
+    <string>Destroy -nothing -the most important thing</string>
+    <string>Discard an axiom</string>
+    <string>Disconnect from desire</string>
+    <string>Discover the recipes you are using and abandon them</string>
+    <string>Distorting time</string>
+    <string>Do nothing for as long as possible</string>
+    <string>Don&apos;t be afraid of things because they&apos;re easy to do</string>
+    <string>Don&apos;t be frightened of cliches</string>
+    <string>Don&apos;t be frightened to display your talents</string>
+    <string>Don&apos;t break the silence</string>
+    <string>Don&apos;t stress one thing more than another</string>
+    <string>Do something boring</string>
+    <string>Do the washing up</string>
+    <string>Do the words need changing?</string>
+    <string>Do we need holes?</string>
+    <string>Emphasise differences</string>
+    <string>Emphasise repetitions</string>
+    <string>Emphasise the flaws</string>
+    <string>Faced with a choice, do both (given by Dieter Rot)</string>
+    <string>Feedback recordings into an acoustic situation</string>
+    <string>Fill every beat with something</string>
+    <string>Get your neck massaged</string>
+    <string>Ghost echoes</string>
+    <string>Give the game away</string>
+    <string>Give way to your worst impulse</string>
+    <string>Go slowly all the way round the outside</string>
+    <string>Honor thy error as a hidden intention</string>
+    <string>How would you have done it?</string>
+    <string>Humanise something free of error</string>
+    <string>Imagine the music as a moving chain or caterpillar</string>
+    <string>Imagine the music as a set of disconnected events</string>
+    <string>Infinitesimal gradations</string>
+    <string>Intentions -credibility of -nobility of -humility of</string>
+    <string>Into the impossible</string>
+    <string>Is it finished?</string>
+    <string>Is there something missing?</string>
+    <string>Is the tuning appropriate?</string>
+    <string>Just carry on</string>
+    <string>Left channel, right channel, centre channel</string>
+    <string>Listen in total darkness, or in a very large room, very quietly</string>
+    <string>Listen to the quiet voice</string>
+    <string>Look at a very small object, look at its centre</string>
+    <string>Look at the order in which you do things</string>
+    <string>Look closely at the most embarrassing details and amplify them</string>
+    <string>Lowest common denominator check -single beat -single note -single riff</string>
+    <string>Make a blank valuable by putting it in an exquisite frame</string>
+    <string>Make an exhaustive list of everything you might do and do the last thing on the list</string>
+    <string>Make a sudden, destructive unpredictable action; incorporate</string>
+    <string>Mechanicalise something idiosyncratic</string>
+    <string>Mute and continue</string>
+    <string>Only one element of each kind</string>
+    <string>(Organic) machinery</string>
+    <string>Overtly resist change</string>
+    <string>Put in earplugs</string>
+    <string>Remember .those quiet evenings</string>
+    <string>Remove ambiguities and convert to specifics</string>
+    <string>Remove specifics and convert to ambiguities</string>
+    <string>Repetition is a form of change</string>
+    <string>Reverse</string>
+    <string>Short circuit (example; a man eating peas with the idea that they will improve his virility shovels them straight into his lap)</string>
+    <string>Shut the door and listen from outside</string>
+    <string>Simple subtraction</string>
+    <string>Spectrum analysis</string>
+    <string>Take a break</string>
+    <string>Take away the elements in order of apparent non-importance</string>
+    <string>Tape your mouth (given by Ritva Saarikko)</string>
+    <string>The inconsistency principle</string>
+    <string>The tape is now the music</string>
+    <string>Think of the radio</string>
+    <string>Tidy up</string>
+    <string>Trust in the you of now</string>
+    <string>Turn it upside down</string>
+    <string>Twist the spine</string>
+    <string>Use an old idea</string>
+    <string>Use an unacceptable colour</string>
+    <string>Use fewer notes</string>
+    <string>Use filters</string>
+    <string>Use &apos;unqualified&apos; people</string>
+    <string>Water</string>
+    <string>What are you really thinking about just now? Incorporate</string>
+    <string>What is the reality of the situation?</string>
+    <string>What mistakes did you make last time?</string>
+    <string>What would your closest friend do?</string>
+    <string>What wouldn&apos;t you do?</string>
+    <string>Work at a different speed</string>
+    <string>You are an engineer</string>
+    <string>You can only make one dot at a time</string>
+    <string>You don&apos;t have to be ashamed of using your own ideas </string>
+    <string>A bad penny always turns up.</string>
+<string>A barking dog never bites.</string>
+<string>A bird in the hand is worth two in the bush.</string>
+<string>A chain is only as strong as its weakest link.</string>
+<string>A dog is a man's best friend.</string>
+<string>A fool and his money are soon parted.</string>
+<string>A foolish consistency is the hobgoblin of little minds.</string>
+<string>A friend in need is a friend indeed.</string>
+<string>A good beginning makes a good ending.</string>
+<string>A jack of all trades is master of none.</string>
+<string>A job worth doing is worth doing well.</string>
+<string>A little learning is a dangerous thing.</string>
+<string>A man is known by the company he keeps.</string>
+<string>A man with one clock knows what time it is. A man with two clocks is never sure.</string>
+<string>A man's home is his castle.</string>
+<string>A miss is as good as a mile.</string>
+<string>A new broom sweeps clean.</string>
+<string>A nod is as good as a wink to a blind man.</string>
+<string>A penny saved is a penny earned.</string>
+<string>A place for everything and everything in its place.</string>
+<string>A rising tide lifts all boats.</string>
+<string>A rolling stone gathers no moss.</string>
+<string>A rose by any other name would smell as sweet.</string>
+<string>A soft answer turneth away wrath.</string>
+<string>A stitch in time saves nine.</string>
+<string>A thing of beauty is a joy forever.</string>
+<string>A watched pot never boils.</string>
+<string>A woman's place is in the home.</string>
+<string>A woman's work is never done.</string>
+<string>A word to the wise is sufficient.</string>
+<string>Absence makes the heart grow fonder.</string>
+<string>Actions speak louder than words.</string>
+<string>All for one and one for all.</string>
+<string>All that glitters is not gold.</string>
+<string>All the world's a stage.</string>
+<string>All things come to he who waits.</string>
+<string>All we learn from history is that we learn nothing from history.</string>
+<string>All work and no play makes Jack a dull boy.</string>
+<string>All's fair in love and war.</string>
+<string>All's well that ends well.</string>
+<string>Always cut the cards.</string>
+<string>An apple a day keeps the doctor away.</string>
+<string>An army marches on its stomach.</string>
+<string>An ounce of prevention is worth a pound of cure.</string>
+<string>Any port in a storm.</string>
+<string>Anything that can go wrong, will go wrong.</string>
+<string>Appearances can be deceiving.</string>
+<string>April showers bring May flowers.</string>
+<string>As you sow, so shall you reap.</string>
+<string>Ask a silly question and you'll get a silly answer.</string>
+<string>Ask and it shall be given.</string>
+<string>Ask and you shall receive.</string>
+<string>Ask no questions and hear no lies.</string>
+<string>Bad news travels fast.</string>
+<string>Barking dogs seldom bite.</string>
+<string>Be careful you don't go from the frying pan into the fire.</string>
+<string>Be it ever so humble, there's no place like home.</string>
+<string>Be not penny wise and pound foolish.</string>
+<string>Beauty is in the eye of the beholder.</string>
+<string>Beauty is only skin deep.</string>
+<string>Before you judge a man, you should walk a mile in his shoes.</string>
+<string>Beggars can't be choosers.</string>
+<string>Behind every successful man is a woman.</string>
+<string>Better late than never.</string>
+<string>Better safe than sorry.</string>
+<string>Better the devil you know than the devil you don't.</string>
+<string>Better to have loved and lost, than never to have loved at all.</string>
+<string>Better to light a candle than to curse the darkness.</string>
+<string>Beware of Greeks bearing gifts.</string>
+<string>Birds of a feather flock together.</string>
+<string>Blood is thicker than water.</string>
+<string>Boys will be boys.</string>
+<string>Brevity is the soul of wit.</string>
+<string>Build a better mousetrap and the world will beat a path to your door.</string>
+<string>Business before pleasure.</string>
+<string>Candy is dandy but liquor is quicker.</string>
+<string>Carpe diem ... seize the day.</string>
+<string>Cast your bread upon the water, and it will be returned a hundred-fold.</string>
+<string>Chickens will come home to roost.</string>
+<string>Children should be seen and not heard.</string>
+<string>Cleanliness is next to godliness.</string>
+<string>Cold hands, warm heart.</string>
+<string>Common sense is not so common.</string>
+<string>Cream always rises to the top.</string>
+<string>Crime does not pay.</string>
+<string>Discretion is the better part of valor.</string>
+<string>Do as I say, not as I do.</string>
+<string>Do unto others as you would have them do unto you.</string>
+<string>Don't bite off more than you can chew.</string>
+<string>Don't bite the hand that feeds you.</string>
+<string>Don't burn the candle at both ends.</string>
+<string>Don't burn your bridges behind you.</string>
+<string>Don't change horses in midstream.</string>
+<string>Don't close the barn door after the horse runs away.</string>
+<string>Don't count your chickens before they hatch.</string>
+<string>Don't cry over spilt milk.</string>
+<string>Don't cut off your nose to spite your face.</string>
+<string>Don't fire until you see the whites of their eyes.</string>
+<string>Don't foul your own nest.</string>
+<string>Don't give up the ship.</string>
+<string>Don't hide your light under a bushel.</string>
+<string>Don't judge a book by its cover.</string>
+<string>Don't kill the goose that lays the golden eggs.</string>
+<string>Don't look a gift horse in the mouth.</string>
+<string>Don't make mountains out of molehills.</string>
+<string>Don't put all your eggs in one basket.</string>
+<string>Don't put the cart before the horse.</string>
+<string>Don't shoot the messenger.</string>
+<string>Don't speak ill of the dead.</string>
+<string>Don't spit into the wind.</string>
+<string>Don't take any wooden nickels.</string>
+<string>Don't throw out the baby with the bath water.</string>
+<string>Don't throw pearls before swine.</string>
+<string>Doubt is the beginning, not the end, of wisdom.</string>
+<string>Early to bed, early to rise, makes a man healthy, wealthy and wise.</string>
+<string>Easier said than done.</string>
+<string>East is East, and West is West, and never the twain shall meet.</string>
+<string>East or West, home is best.</string>
+<string>Easy come, easy go.</string>
+<string>Eat to live, don't live to eat.</string>
+<string>Eat, drink and be merry, for tomorrow we die.</string>
+<string>Even a broken clock is right twice a day.</string>
+<string>Every cloud has a silver lining.</string>
+<string>Every dog has his day.</string>
+<string>Every man has a price.</string>
+<string>Everybody talks about the weather, but nobody does anything about it.</string>
+<string>Expect the unexpected.</string>
+<string>Experience is the best teacher.</string>
+<string>Faith will move mountains.</string>
+<string>Familiarity breeds contempt.</string>
+<string>Feed a cold, starve a fever.</string>
+<string>Finders keepers, losers weepers.</string>
+<string>First come, first served.</string>
+<string>Flattery will get you nowhere.</string>
+<string>Fools rush in where angels fear to tread.</string>
+<string>For want of a nail, a kingdom was lost.</string>
+<string>Forewarned is forearmed.</string>
+<string>Forgive and forget.</string>
+<string>Forgive them, for they know not what they do.</string>
+<string>Frailty, thy name is woman!</string>
+<string>From the sublime to the ridiculous is but a step.</string>
+<string>Gather ye rosebuds while ye may.</string>
+<string>Genius is one percent inspiration and 99 percent perspiration.</string>
+<string>Give a man a fish and he eats for one night. Teach him how and he eats for life.</string>
+<string>Give him an inch and he'll take a mile.</string>
+<string>Give him enough rope and he'll hang himself.</string>
+<string>Give me liberty, or give me death.</string>
+<string>Give the devil his due.</string>
+<string>God helps those who help themselves.</string>
+<string>Good fences make good neighbors.</string>
+<string>Good gifts come in small packages.</string>
+<string>Great minds think alike.</string>
+<string>Great oaks from little acorns grow.</string>
+<string>Grin and bear it.</string>
+<string>Half a loaf is better than none.</string>
+<string>Handsome is as handsome does.</string>
+<string>Haste makes waste.</string>
+<string>He that is not with me is against me.</string>
+<string>He who fights and runs away, lives to fight another day.</string>
+<string>He who hesitates is lost.</string>
+<string>He who laughs last, laughs best.</string>
+<string>He who lives by the sword shall die by the sword.</string>
+<string>He who pays the piper calls the tune.</string>
+<string>Hell hath no fury like a woman scorned.</string>
+<string>Here today, gone tomorrow.</string>
+<string>History repeats itself.</string>
+<string>Hitch your wagon to a star.</string>
+<string>Home is where the heart is.</string>
+<string>Honesty is the best policy.</string>
+<string>Hope springs eternal in the human breast.</string>
+<string>Hunger is the best sauce.</string>
+<string>I think, therefore I am.</string>
+<string>Idle hands are the devil's workshop.</string>
+<string>If at first you don't succeed, try, try again.</string>
+<string>If it's not broke, don't fix it.</string>
+<string>If it's not one thing, it's another.</string>
+<string>If the mountain won't come to Mohammed, then Mohammed will go to the mountain.</string>
+<string>If the shoe fits, wear it.</string>
+<string>If wishes were fishes then no man would starve.</string>
+<string>If wishes were horses, then beggars would ride.</string>
+<string>If you can't beat them, join them.</string>
+<string>If you can't stand the heat, get out of the kitchen.</string>
+<string>If you do what you've always done you'll get what you've always got.</string>
+<string>If you lie down with dogs, you wake up with fleas.</string>
+<string>If you snooze, you lose.</string>
+<string>Ignorance is bliss.</string>
+<string>Ignoriance of the law is no excuse for breaking it.</string>
+<string>Imitation is the sincerest form of flattery.</string>
+<string>In for a penny, in for a pound.</string>
+<string>In the country of the blind, the one-eyed man is king.</string>
+<string>In the spring a young man's fancy lightly turns to thoughts of love.</string>
+<string>It never rains but it pours.</string>
+<string>It takes a thief to catch a thief.</string>
+<string>It takes two to tango.</string>
+<string>It'll all come out in the wash.</string>
+<string>It's an ill wind that blows no good.</string>
+<string>It's every man for himself.</string>
+<string>It's never too late to mend.</string>
+<string>It's no use beating a dead horse.</string>
+<string>It's not over till it's over.</string>
+<string>It's not over until the fat lady sings.</string>
+<string>It's not the heat, it's the humidity.</string>
+<string>It's not the knowing that is difficult, but the doing.</string>
+<string>It's not whether you win or lose, but how you play the game.</string>
+<string>It's the empty can that makes the most noise.</string>
+<string>It's the squeaky wheel that gets the grease.</string>
+<string>It's time to fish or cut bait.</string>
+<string>Keep a stiff upper lip.</string>
+<string>Keep your eyes peeled.</string>
+<string>Keep your fingers crossed.</string>
+<string>Keep your head above water.</string>
+<string>Keep your nose to the grindstone.</string>
+<string>Keep your powder dry.</string>
+<string>Know thyself.</string>
+<string>Know which side your bread is buttered on.</string>
+<string>Knowledge is power.</string>
+<string>Laugh, and the world laughs with you; weep, and you weep alone.</string>
+<string>Laughter is the best medicine.</string>
+<string>Leave no stone unturned.</string>
+<string>Leave well enough alone.</string>
+<string>Let bygones be bygones.</string>
+<string>Let he who is without sin cast the first stone.</string>
+<string>Let nature takes its course.</string>
+<string>Let sleeping dogs lie.</string>
+<string>Let's cross the bridge when we come to it.</string>
+<string>Life is short, art is long.</string>
+<string>Lightning never strikes twice in the same place.</string>
+<string>Little pitchers have big ears.</string>
+<string>Little strokes fell great oaks.</string>
+<string>Live and learn.</string>
+<string>Live and let live.</string>
+<string>Live every day as if it were your last.</string>
+<string>Look before you leap.</string>
+<string>Love conquers all.</string>
+<string>Love is blind.</string>
+<string>Love makes the world go 'round.</string>
+<string>Make a virtue of necessity.</string>
+<string>Make haste slowly.</string>
+<string>Make hay while the sun shines.</string>
+<string>Man cannot live by bread alone.</string>
+<string>Man proposes, God disposes.</string>
+<string>Many are called but few are chosen.</string>
+<string>Many hands make light work.</string>
+<string>Marry in haste, repent at leisure.</string>
+<string>Might makes right.</string>
+<string>Mind your P's and Q's.</string>
+<string>Misery loves company.</string>
+<string>Money isn't everything.</string>
+<string>Murder will out.</string>
+<string>Music hath charms to soothe the savage breast.</string>
+<string>Nature abhors a vacuum.</string>
+<string>Necessity is the mother of invention.</string>
+<string>Never give a sucker an even break.</string>
+<string>Never judge a book by its cover.</string>
+<string>Never put off until tomorrow what you can do today.</string>
+<string>Never say die.</string>
+<string>No good deed goes unrewarded.</string>
+<string>No man can serve two masters.</string>
+<string>No man is an island.</string>
+<string>No news is good news.</string>
+<string>No pain, no gain.</string>
+<string>Nothing is certain but death and taxes.</string>
+<string>Nothing succeeds like success.</string>
+<string>Nothing ventured, nothing gained.</string>
+<string>Oil and water don't mix.</string>
+<string>Old habits die hard.</string>
+<string>Once bitten, twice shy.</string>
+<string>One good turn deserves another.</string>
+<string>One man's loss is another man's gain.</string>
+<string>One man's meat is another man's poison.</string>
+<string>One picture is worth a thousand words.</string>
+<string>One rotten apple spoils the barrel.</string>
+<string>Only the wearer knows where the shoe pinches.</string>
+<string>Opportunity never knocks twice.</string>
+<string>Opposites attract.</string>
+<string>Out of sight, out of mind.</string>
+<string>People who live in glass houses shouldn't throw stones.</string>
+<string>Politics makes strange bedfellows.</string>
+<string>Possession is nine-tenths of the law.</string>
+<string>Power corrupts; absolute power corrupts absolutely.</string>
+<string>Practice makes perfect.</string>
+<string>Practice what you preach.</string>
+<string>Pride goeth before a fall.</string>
+<string>Procrastination is the thief of time.</string>
+<string>Rats desert a sinking ship.</string>
+<string>Revenge is a dish best eaten cold.</string>
+<string>Revenge is sweet.</string>
+<string>Rome wasn't built in a day.</string>
+<string>Seeing is believing.</string>
+<string>Seek and ye shall find.</string>
+<string>Share and share alike.</string>
+<string>Silence is golden.</string>
+<string>Sink or swim.</string>
+<string>Slow but steady wins the race.</string>
+<string>Spare the rod and spoil the child.</string>
+<string>Still waters run deep.</string>
+<string>Stone walls do not a prison make.</string>
+<string>Strike while the iron is hot.</string>
+<string>Take the bitter with the sweet.</string>
+<string>Take the bull by the horns.</string>
+<string>That's life.</string>
+<string>That's the way the ball bounces.</string>
+<string>The apple doesn't fall far from the tree.</string>
+<string>The bad workman always blames his tools.</string>
+<string>The best things in life are free.</string>
+<string>The best-laid plans of mice and men often go awry.</string>
+<string>The bigger they come, the harder they fall.</string>
+<string>The burnt child shuns the fire.</string>
+<string>The child is the father of the man.</string>
+<string>The course of true love never did run smooth.</string>
+<string>The devil can cite Scripture for his purpose.</string>
+<string>The early bird gets the worm.</string>
+<string>The end justifies the means.</string>
+<string>The eyes are the windows to the soul.</string>
+<string>The grass is always greener on the other side.</string>
+<string>The hotter the battle, the sweeter the victory.</string>
+<string>The leopard cannot change its spots.</string>
+<string>The longest journey begins with but a single footstep.</string>
+<string>The love of money is the root of all evil.</string>
+<string>The meek shall inherit the earth.</string>
+<string>The more the merrier.</string>
+<string>The more things change, the more they stay the same.</string>
+<string>The pen is mightier than sword.</string>
+<string>The quality of mercy is not strained.</string>
+<string>The proof of the pudding is in the eating.</string>
+<string>The race isn't always to the swift, nor the fight to the strong, but that's the way to bet.</string>
+<string>The road to Hell is paved with good intentions.</string>
+<string>The sea refuses no river.</string>
+<string>The show must go on.</string>
+<string>The truth will out.</string>
+<string>The teacher appears when the student is ready.</string>
+<string>The turtle only makes progress when it sticks its neck out.</string>
+<string>The walls have ears.</string>
+<string>The way to a man's heart is through his stomach.</string>
+<string>The wish is father of the deed.</string>
+<string>There ain't no such thing as a free lunch.</string>
+<string>There are plenty of fish in the sea.</string>
+<string>There are old soldiers, and bold soldiers, but there are no old, bold soldiers.</string>
+<string>There are two sides to every question.</string>
+<string>There is nothing good or bad but thinking makes it so.</string>
+<string>There's a first time for everything.</string>
+<string>There's many a slip 'twixt the cup and the lip.</string>
+<string>There's method in his madness.</string>
+<string>There's more than one way to skin a cat.</string>
+<string>There's no accounting for taste.</string>
+<string>There's no defense like a good offense.</string>
+<string>There's no disputing about taste.</string>
+<string>There's no fool like an old fool.</string>
+<string>There's no place like home.</string>
+<string>There's no rest for the wicked.</string>
+<string>There's no such thing as a free lunch.</string>
+<string>There's nothing new under the sun.</string>
+<string>There's something rotten in Denmark.</string>
+<string>There, but for the grace of God, go I.</string>
+<string>Things aren't always what they seem.</string>
+<string>This too shall pass.</string>
+<string>Those who cannot remember the past are condemned to repeat it.</string>
+<string>Time and tide wait for no man.</string>
+<string>Time heals all wounds.</string>
+<string>Time is money.</string>
+<string>Time is of the essence.</string>
+<string>To err is human, to forgive divine.</string>
+<string>Too many cooks spoil the broth.</string>
+<string>Truth is stranger than fiction.</string>
+<string>Turn the other cheek.</string>
+<string>Turnabout is fair play.</string>
+<string>Two heads are better than one.</string>
+<string>Two wrongs don't make a right.</string>
+<string>Two's company, three's a crowd.</string>
+<string>Uneasy lies the head that wears a crown.</string>
+<string>Variety is the spice of life.</string>
+<string>Waste not, want not.</string>
+<string>Water seeks its own level.</string>
+<string>Well begun is half done.</string>
+<string>We're too soon old and too late smart.</string>
+<string>What can't be cured must be endured.</string>
+<string>What goes around, comes around.</string>
+<string>What goes up, must come down.</string>
+<string>What will be, will be.</string>
+<string>What's good for the goose is good for the gander.</string>
+<string>When all you have are lemons, make lemonade.</string>
+<string>When in Rome, do as the Romans do.</string>
+<string>When it rains, it pours.</string>
+<string>When the cat's away, the mice will play.</string>
+<string>When the going gets tough, the tough get going.</string>
+<string>When your only tool is a hammer, every problem looks like a nail.</string>
+<string>Where there's a will, there's a way.</string>
+<string>Where there's smoke, there's fire.</string>
+<string>While there's life, there's hope.</string>
+<string>Who pays the piper calls the tune.</string>
+<string>Winners never quit and quitters never win.</string>
+<string>You can catch more flies with honey than with vinegar.</string>
+<string>You can fool some of the people all of the time, and all of the people some of the time, but you can't fool all of the people all of the time.</string>
+<string>You can kill a man but you can't kill an idea.</string>
+<string>You can lead a horse to water, but you can't make it drink.</string>
+<string>You can take the boy out of the country, but you can't take the country out of the boy.</string>
+<string>You can't fight city hall.</string>
+<string>You can't fit a round peg in a square hole.</string>
+<string>You can't get the toothpaste back in the tube.</string>
+<string>You can't go home again.</string>
+<string>You can't have your cake and eat it too.</string>
+<string>You can't make a silk purse out of a sow's ear.</string>
+<string>You can't make an omelet without breaking eggs.</string>
+<string>You can't squeeze blood from a turnip.</string>
+<string>You can't take it with you.</string>
+<string>You can't teach an old dog new tricks.</string>
+<string>You can't tell a book by its cover.</string>
+<string>You can't unring a bell.</string>
+<string>You can't unscramble an egg.</string>
+<string>You don't get something for nothing.</string>
+<string>You get what you pay for.</string>
+<string>You have to take the bitter with the sweet.</string>
+<string>You have to take the good with the bad.</string>
+<string>You made your bed, now lie in it.</string>
+<string>You need to stop to smell the roses.</string>
+<string>You need to take a bull by the horns, and a man by his word.</string>
+<string>You pays your money and you takes your choice.</string>
+<string>You're never too old to learn.</string>
+</Deck>

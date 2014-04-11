@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    
+     android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#222930"
+    tools:context=".MainActivity" 
+    android:id="@+id/entireScreen"
+   >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6402054126829022/8633504599" />
+</LinearLayout>
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/ObCardVal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#E9E9E9"
+        android:fontFamily="sans-serif"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:text="Aphro\n\nA bunch of aphorisms\n\nPress to end writer's block"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
