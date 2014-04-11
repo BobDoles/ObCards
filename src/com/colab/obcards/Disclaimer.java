@@ -1,4 +1,4 @@
-package com.example.obcards;
+package com.colab.obcards;
 
 import com.colab.obcards.R;
 

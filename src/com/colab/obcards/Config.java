@@ -1,6 +1,5 @@
-package com.example.obcards;
+package com.colab.obcards;
 
-import android.os.Bundle;
 import java.util.ArrayList;
 
 

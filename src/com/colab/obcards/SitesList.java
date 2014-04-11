@@ -1,4 +1,4 @@
-package com.example.obcards;
+package com.colab.obcards;
 
 import java.util.ArrayList;
 
@@ -7,8 +7,6 @@ public class SitesList {
 
 	/** Variables */
 	private ArrayList<String> name = new ArrayList<String>();
-	private ArrayList<String> website = new ArrayList<String>();
-	private ArrayList<String> category = new ArrayList<String>();
 
 	
 	/** In Setter method default it will return arraylist 

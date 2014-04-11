@@ -1,9 +1,4 @@
-package com.example.obcards;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
-import com.colab.obcards.R;
-
+package com.colab.obcards;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,11 +11,7 @@ import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.res.AssetManager;
 import android.os.Bundle;
-import android.telephony.TelephonyManager;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
@@ -28,8 +19,10 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 public class MainActivity extends Activity {
 	public TextView t;
@@ -93,7 +86,7 @@ public class MainActivity extends Activity {
 		
 		
 		
-try {
+		try {
 			
 			/** Handling XML */
 			SAXParserFactory spf = SAXParserFactory.newInstance();
