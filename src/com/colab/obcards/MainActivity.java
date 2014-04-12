@@ -2,15 +2,9 @@ package com.colab.obcards;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
-
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
-
-import org.xml.sax.InputSource;
-import org.xml.sax.XMLReader;
 
 import android.app.Activity;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MotionEvent;
@@ -21,6 +15,7 @@ import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
+import com.colab.obcards.util.FileManager;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -33,27 +28,7 @@ public class MainActivity extends Activity {
 	/** Create Object For SiteList Class */
 	SitesList sitesList = null;
 	
-	@Override
-	public void onSaveInstanceState(Bundle savedInstanceState) {
 
-	  // Save UI state changes to the savedInstanceState.   
-	  // This bundle will be passed to onCreate if the process is  
-	  // killed and restarted.
-	  savedInstanceState.putInt("y", x);  
-	  // etc.  
-	  super.onSaveInstanceState(savedInstanceState);  
-	}  
-	//onRestoreInstanceState  
-	    @Override  
-	public void onRestoreInstanceState(Bundle savedInstanceState) {  
-	  super.onRestoreInstanceState(savedInstanceState);  
-	  // Restore UI state from the savedInstanceState.  
-	  // This bundle has also been passed to onCreate.  
-	  int y = savedInstanceState.getInt("y");
-	  x = y;
-	  t.setText(sitesList.getName().get(x));
-	  intro.setText("");
-	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -85,19 +60,19 @@ public class MainActivity extends Activity {
 		TextView category[];
 		
 		
-		
+		/*
 		try {
 			
-			/** Handling XML */
+			// Handling XML
 			SAXParserFactory spf = SAXParserFactory.newInstance();
 			SAXParser sp = spf.newSAXParser();
 			XMLReader xr = sp.getXMLReader();
 
-			/** Send URL to parse XML Tags */
+			// Send URL to parse XML Tags
 			URL sourceUrl = new URL(
 					"http://www.androidpeople.com/wp-content/uploads/2010/06/example.xml");
 			InputSource is = new InputSource(getResources().openRawResource(R.raw.edition1));
-			/** Create handler to handle XML Tags ( extends DefaultHandler ) */
+			// Create handler to handle XML Tags ( extends DefaultHandler )
 			MyXMLHandler myXMLHandler = new MyXMLHandler();
 			xr.setContentHandler(myXMLHandler);
 			xr.parse(new InputSource(is.getByteStream()));
@@ -106,15 +81,15 @@ public class MainActivity extends Activity {
 			System.out.println("XML Pasing Excpetion = " + e);
 		}
 
-		/** Get result from MyXMLHandler SitlesList Object */
+		// Get result from MyXMLHandler SitlesList Object
 		sitesList = MyXMLHandler.sitesList;
 
-		/** Assign textview array lenght by arraylist size */
+		// Assign textview array lenght by arraylist size
 		name = new TextView[sitesList.getName().size()];
 		website = new TextView[sitesList.getName().size()];
 		category = new TextView[sitesList.getName().size()];
 
-		/** Set the result text in textview and add it to layout */
+		// Set the result text in textview and add it to layout
 		for (int i = 0; i < sitesList.getName().size(); i++) {
 			name[i] = new TextView(this);
 			name[i].setText("Name = "+sitesList.getName().get(i));
@@ -122,10 +97,13 @@ public class MainActivity extends Activity {
 			//layout.addView(name[i]);
 		}
 		
-/*
 		Intent myIntent = new Intent(this, Disclaimer.class);
 		startActivity(myIntent);
+		
 */
+		FileManager fm = new FileManager(getAssets());
+		final Deck deck = fm.LoadDeck("Edition 1");
+		
 		myView = (View)findViewById(R.id.entireScreen);
 		myView.setOnTouchListener(new View.OnTouchListener() {
 
@@ -137,7 +115,7 @@ public class MainActivity extends Activity {
 				//System.out.println(deck.getRandomCard());
 				t.startAnimation(anim);
 				try{
-				t.setText(sitesList.getName().get((int)(Math.random() * (((int)sitesList.getName().size()) + 1))));
+					t.setText(deck.getRandomCard());
 				}
 				catch(IndexOutOfBoundsException e){
 					t.setText("Card does not exist");
@@ -183,7 +161,11 @@ public class MainActivity extends Activity {
 	    } catch (IOException e) {
 
 	    }
+	    
+	    
+	    
 	    return outputStream.toString();
+	   
 	}
 
 	@Override
@@ -193,6 +175,5 @@ public class MainActivity extends Activity {
 	   // t.setText("Step One: blast egg");
 		return true;
 	}
-	
-	
+		
 }

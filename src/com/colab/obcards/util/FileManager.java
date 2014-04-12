@@ -3,24 +3,36 @@ package com.colab.obcards.util;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 import org.xmlpull.v1.XmlPullParserException;
+
+import android.content.res.AssetManager;
 
 import com.colab.obcards.Deck;
 
 public class FileManager {
 	
-	public static Deck LoadDeck(String name)
+	AssetManager assetManager;
+	XmlParser xml;
+	
+	public FileManager(AssetManager assetManager)
+	{
+		this.assetManager = assetManager;
+		xml = new XmlParser();
+	}
+	
+	public Deck LoadDeck(String name)
 	{
 		
-		String path = "/assets/deck/" + StringToFile(name);
+		String path = "/deck/Edition_1.xml";
 		File file = new File(path);
-		FileInputStream in = null;
+		InputStream in = null;
 		Deck loadedDeck = null;
 		
 		try {
-			in = new FileInputStream(file);
-			loadedDeck = XmlParser.parse(in);
+			in = assetManager.open("Edition_1.xml");
+			loadedDeck = xml.parse(in);
 			
 		}
 		catch(IOException e) {
@@ -46,12 +58,12 @@ public class FileManager {
 		else
 		{
 			loadedDeck = new Deck("Error",false);
-			loadedDeck.addCard("ERROR WITH LOADING DECK\nPlease report to developer");
+			loadedDeck.addCard("ERROR WITH LOADING DECK");
 			return loadedDeck;
 		}
 	}
 	
-	public static String StringToFile(String name)
+	public String StringToFile(String name)
 	{
 		String fileName = "";
 		char[] letters = name.toCharArray();

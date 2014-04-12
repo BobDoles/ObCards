@@ -12,8 +12,13 @@ import com.colab.obcards.Deck;
 
 
 public class XmlParser {
-
-	public static Deck parse(InputStream in) throws XmlPullParserException, IOException
+	
+	public XmlParser()
+	{
+		
+	}
+	
+	public Deck parse(InputStream in) throws XmlPullParserException, IOException
 	{
 		try {
 			XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
@@ -24,12 +29,15 @@ public class XmlParser {
 			parser.nextTag();
 			return readDeck(parser);
 		}
-		finally {
+		finally
+		{
 			in.close();
 		}
 	}
 	
-	private static Deck readDeck(XmlPullParser parser) throws XmlPullParserException, IOException
+
+	
+	private Deck readDeck(XmlPullParser parser) throws XmlPullParserException, IOException
 	{
 		parser.require(XmlPullParser.START_TAG, null, "Deck");
 		String name = null;
@@ -38,10 +46,9 @@ public class XmlParser {
 		
 		while(parser.next() != XmlPullParser.END_TAG)
 		{
-			if(parser.getEventType() != XmlPullParser.START_TAG)
-			{
-				continue;
-			}
+			if (parser.getEventType() != XmlPullParser.START_TAG) {
+	            continue;
+	        }
 			
 			String tagName = parser.getName();
 			
@@ -53,7 +60,7 @@ public class XmlParser {
 			{
 				custom = Boolean.parseBoolean(readText(parser));
 			}
-			else if (tagName.equals("cards"))
+			else if(tagName.equals("cards"))
 			{
 				cards = readCards(parser);
 			}
@@ -62,26 +69,36 @@ public class XmlParser {
 		return new Deck(name, custom, cards);
 	}
 	
-	private static String readName(XmlPullParser parser) throws XmlPullParserException, IOException
-	{
+	private String readName(XmlPullParser parser) throws IOException, XmlPullParserException {
 		parser.require(XmlPullParser.START_TAG, null, "name");
 		String name = readText(parser);
 		parser.require(XmlPullParser.END_TAG, null, "name");
 		return name;
 	}
 
-	private static ArrayList<String> readCards(XmlPullParser parser) throws XmlPullParserException, IOException
+	private String readText(XmlPullParser parser) throws XmlPullParserException, IOException {
+		String result ="";
+		
+		if (parser.next() == XmlPullParser.TEXT) {
+	        result = parser.getText();
+	        parser.nextTag();
+	    }
+
+		
+		return result;
+	}
+
+	private ArrayList<String> readCards(XmlPullParser parser) throws XmlPullParserException, IOException
 	{
 		ArrayList<String> cards = new ArrayList<String>();
 		
 		parser.require(XmlPullParser.START_TAG, null, "cards");
 		
-		while(parser.next() != XmlPullParser.START_TAG)
+		while(parser.next() != XmlPullParser.END_TAG)
 		{
-			if(parser.getEventType() != XmlPullParser.START_TAG)
-			{
-				continue;
-			}
+			if (parser.getEventType() != XmlPullParser.START_TAG) {
+	            continue;
+	        }
 			
 			String tagName = parser.getName();
 			
@@ -90,20 +107,7 @@ public class XmlParser {
 				cards.add(readText(parser));
 			}
 		}
-		
+
 		return cards;
-	}
-	
-	private static String readText(XmlPullParser parser) throws XmlPullParserException, IOException
-	{
-		String result = "";
-		
-		if(parser.next() == XmlPullParser.TEXT)
-		{
-			result = parser.getText();
-			parser.nextTag();
-		}
-		
-		return result;
 	}
 }
