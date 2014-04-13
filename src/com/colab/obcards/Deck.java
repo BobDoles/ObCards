@@ -15,7 +15,9 @@ public class Deck {
 	 * Default constructor
 	 */
 	public Deck() {
+		name = "";
 		custom = false;
+		cards = new ArrayList<String>();
 	}
 	
 	/**

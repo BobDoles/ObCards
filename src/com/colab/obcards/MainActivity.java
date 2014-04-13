@@ -1,10 +1,7 @@
 package com.colab.obcards;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 
 import android.app.Activity;
-import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MotionEvent;
@@ -54,55 +51,12 @@ public class MainActivity extends Activity {
 		intro = (TextView)findViewById(R.id.textView2);
 		intro.startAnimation(anim);
 		t.setText("");
-		/** Create a new textview array to display the results */
-		TextView name[];
-		TextView website[];
-		TextView category[];
+
 		
-		
-		/*
-		try {
-			
-			// Handling XML
-			SAXParserFactory spf = SAXParserFactory.newInstance();
-			SAXParser sp = spf.newSAXParser();
-			XMLReader xr = sp.getXMLReader();
-
-			// Send URL to parse XML Tags
-			URL sourceUrl = new URL(
-					"http://www.androidpeople.com/wp-content/uploads/2010/06/example.xml");
-			InputSource is = new InputSource(getResources().openRawResource(R.raw.edition1));
-			// Create handler to handle XML Tags ( extends DefaultHandler )
-			MyXMLHandler myXMLHandler = new MyXMLHandler();
-			xr.setContentHandler(myXMLHandler);
-			xr.parse(new InputSource(is.getByteStream()));
-			
-		} catch (Exception e) {
-			System.out.println("XML Pasing Excpetion = " + e);
-		}
-
-		// Get result from MyXMLHandler SitlesList Object
-		sitesList = MyXMLHandler.sitesList;
-
-		// Assign textview array lenght by arraylist size
-		name = new TextView[sitesList.getName().size()];
-		website = new TextView[sitesList.getName().size()];
-		category = new TextView[sitesList.getName().size()];
-
-		// Set the result text in textview and add it to layout
-		for (int i = 0; i < sitesList.getName().size(); i++) {
-			name[i] = new TextView(this);
-			name[i].setText("Name = "+sitesList.getName().get(i));
-
-			//layout.addView(name[i]);
-		}
-		
-		Intent myIntent = new Intent(this, Disclaimer.class);
-		startActivity(myIntent);
-		
-*/
-		FileManager fm = new FileManager(getAssets());
+		FileManager fm = new FileManager(getAssets(), this);
+		//fm.MovePremadeDecksToExternalStorage();
 		final Deck deck = fm.LoadDeck("Edition 1");
+		
 		
 		myView = (View)findViewById(R.id.entireScreen);
 		myView.setOnTouchListener(new View.OnTouchListener() {
@@ -110,6 +64,8 @@ public class MainActivity extends Activity {
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				intro.setText("");
+				
+				
 				// TODO Auto-generated method stub
 				x++;
 				//System.out.println(deck.getRandomCard());
@@ -145,27 +101,6 @@ public class MainActivity extends Activity {
 			}
 	    });
 	    
-	}
-	
-	private String readTextFile(InputStream inputStream) {
-	    ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-
-	    byte buf[] = new byte[1024];
-	    int len;
-	    try {
-	        while ((len = inputStream.read(buf)) != -1) {
-	            outputStream.write(buf, 0, len);
-	        }
-	        outputStream.close();
-	        inputStream.close();
-	    } catch (IOException e) {
-
-	    }
-	    
-	    
-	    
-	    return outputStream.toString();
-	   
 	}
 
 	@Override
