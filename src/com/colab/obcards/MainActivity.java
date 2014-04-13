@@ -54,8 +54,10 @@ public class MainActivity extends Activity {
 
 		
 		FileManager fm = new FileManager(getAssets(), this);
-		//fm.MovePremadeDecksToExternalStorage();
-		final Deck deck = fm.LoadDeck("Edition 1");
+		
+		fm.MovePremadeDecksToInternalStorage();
+		
+		final Deck deck = fm.LoadDeck("Edition 4");
 		
 		
 		myView = (View)findViewById(R.id.entireScreen);

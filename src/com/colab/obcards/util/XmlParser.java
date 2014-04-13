@@ -13,12 +13,13 @@ import com.colab.obcards.Deck;
 
 public class XmlParser {
 	
-	public XmlParser()
-	{
-		
+	public enum Type {
+		CONFIG, DECK
 	}
 	
-	public Deck parse(InputStream in) throws XmlPullParserException, IOException
+	public XmlParser() {}
+	
+	public Object parse(InputStream in, Type type) throws XmlPullParserException, IOException
 	{
 		try {
 			XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
@@ -27,13 +28,19 @@ public class XmlParser {
 			
 			parser.setInput(in, "UTF-8");
 			parser.nextTag();
-			return readDeck(parser);
+			
+			//if(type == Type.DECK)
+				return readDeck(parser);
+			/*else if(type == Type.CONFIG)
+				return readConfig(parser);*/
+				
 		}
 		finally
 		{
 			in.close();
 		}
 	}
+	
 	
 
 	

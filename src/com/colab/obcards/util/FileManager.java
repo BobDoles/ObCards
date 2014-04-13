@@ -1,50 +1,66 @@
 package com.colab.obcards.util;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.content.Context;
+import android.content.ContextWrapper;
 import android.content.res.AssetManager;
-import android.os.Environment;
 
+import com.colab.obcards.AppConfig;
 import com.colab.obcards.Deck;
+import com.colab.obcards.util.XmlParser.Type;
 
 public class FileManager {
 	
 	AssetManager assetManager;
-	Context context;
+	ContextWrapper context;
 	XmlParser xml;
+	File dir;
 	
+	/**
+	 * Constructor
+	 * @param assetManager	AssetManager that will be used.
+	 * @param context	Context that will be used to create a ContextWrapper.
+	 */
 	public FileManager(AssetManager assetManager, Context context)
 	{
 		this.assetManager = assetManager;
-		this.context = context;
+		this.context = new ContextWrapper(context);
 		xml = new XmlParser();
+		dir = context.getFilesDir();
+		dir.mkdirs();
 	}
-	
-	public void MovePremadeDecksToExternalStorage()
+
+	/**
+	 * Moves the premade decks from the assets folder into a folder
+	 * on the internal storage of the mobile device. This will allow
+	 * us to use the same loading method for both premade and custom
+	 * decks.
+	 */
+	public void MovePremadeDecksToInternalStorage()
 	{
-		File sdcard = Environment.getExternalStorageDirectory();
-		File saveLoc = new File(sdcard.getAbsolutePath(), "data/com.colab.obcards/decks/");
-		
-		if(!saveLoc.exists())
-			saveLoc.mkdirs();
-		
 		try {
-			String[] query = assetManager.list("");
 			
+			String[] query = assetManager.list("deck");
+			File dir2 = new File(dir, "deck");
 			for(int i=0; i < query.length; i++)
 			{
-				InputStream in = assetManager.open("Edition_2.xml");
-				FileOutputStream out = context.openFileOutput("Edition_2.xml", 0);
+				File dir3 = new File(dir2, query[i]);
+				
+				InputStream in = assetManager.open("deck/" + query[i]);
+				OutputStream out = new BufferedOutputStream(new FileOutputStream(dir3));
 				
 				int read = 0;
-				byte[] bytes = new byte[1];
+				byte[] bytes = new byte[1024];
 				
 				while ((read = in.read(bytes)) != -1) {
 					out.write(bytes, 0, read);
@@ -60,22 +76,23 @@ public class FileManager {
 		}
 	}
 	
+	/**
+	 * Loads a deck based on a specified string.
+	 * @param name	Name of deck to be loaded
+	 * @return	Loaded deck.
+	 */
 	public Deck LoadDeck(String name)
 	{
-		String filePath = "data/com.colab.obcards/decks/"+ StringToFile(name, ".xml");
-		File sdcard = Environment.getExternalStorageDirectory();
-		File path = new File(sdcard.getAbsolutePath(), filePath);
-		
-		
-		FileInputStream in = null;
+		InputStream in = null;
 		Deck loadedDeck = null;
-		
+		File dir2 = new File(dir, "deck" );
+		dir2.mkdirs();
+		File file = new File(dir2, StringToFile(name, ".xml"));
 		try {
-			in = context.openFileInput("Edition_2.xml");
 			
-			loadedDeck = xml.parse(in);
+			in = new BufferedInputStream(new FileInputStream(file));
 			
-			
+			loadedDeck = (Deck)xml.parse(in, Type.DECK);
 		}
 		catch(IOException e) {
 			System.err.println(e.getMessage());
@@ -99,22 +116,18 @@ public class FileManager {
 			return loadedDeck;
 		else
 		{
-			loadedDeck = new Deck("ERROR");
-			
-			String[] strings = context.fileList();
-			String str = "";
-			
-			
-			for(int i=0;i<strings.length;i++)
-			{
-				str+=strings[i];
-			}
-			
-			loadedDeck.addCard(context.getFilesDir().toString() + ";" + str);
+			loadedDeck = new Deck();
+			loadedDeck.addCard("ERROR LOADING DECK");
 			return loadedDeck;
 		}
 	}
 	
+	/**
+	 * Converts a string value into an appropriate file name.
+	 * @param name	String value to be converted
+	 * @param ext	File extension to be used.
+	 * @return	Usable file name.
+	 */
 	public String StringToFile(String name, String ext)
 	{
 		String fileName = "";
@@ -135,4 +148,21 @@ public class FileManager {
 		return fileName;
 	}
 	
+	public AppConfig LoadConfig()
+	{
+		FileInputStream in = null;
+		AppConfig loadedConfig = null;
+		
+		try {
+			// UPDATE THIS LINE OF CODE!
+			in = context.openFileInput("config.xml");
+			//loadedConfig = (AppConfig)xml.parseConfig(in);
+		}
+		catch (IOException e)
+		{
+			System.err.println(e.getMessage());
+		}
+		
+		return loadedConfig;
+	}
 }

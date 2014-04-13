@@ -3,14 +3,14 @@ package com.colab.obcards;
 import java.util.ArrayList;
 
 
-public class Config {
+public class AppConfig {
 	
 	public static ArrayList<String> activeDecks;
 	
 	/**
 	 * Default constructor
 	 */
-	public Config()
+	public AppConfig()
 	{
 		activeDecks = new ArrayList<String>();
 	}
